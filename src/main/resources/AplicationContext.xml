@@ -11,7 +11,9 @@
 
 
     <bean id="MusicTest"
-          class="sk.ex.RapMusic">
+          class="sk.ex.RapMusic"
+    scope="prototype"
+    init-method="myInit">
     </bean>
 
     <bean id="MusicPlayer"
